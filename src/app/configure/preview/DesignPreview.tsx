@@ -6,6 +6,7 @@ import { BASE_PRICE, PRODUCT_PRICES } from "@/config/products";
 import { cn, FormatPrice } from "@/lib/utils";
 import { COLORS, FINISHES, MODELS } from "@/validators/options-validator";
 import { Configuration } from "@prisma/client";
+import { useMutation } from "@tanstack/react-query";
 import { ArrowRight, Check } from "lucide-react";
 import { useEffect, useState } from "react";
 import Confetti from "react-dom-confetti";
@@ -30,6 +31,12 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
   useEffect(() => {
     setShowConfetti(true);
   });
+
+  const {} = useMutation({
+    mutationKey: ["get-checkout-session"],
+    mutationFn: async () => {},
+  });
+
   return (
     <>
       <div
