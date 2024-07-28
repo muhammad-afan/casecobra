@@ -1,12 +1,18 @@
 "use server";
 
 import { db } from "@/db";
+import {
+  CaseColor,
+  CaseFinish,
+  CaseMaterial,
+  PhoneModel,
+} from "@prisma/client";
 
 export type SaveConfigArgs = {
-  color: string;
-  finish: string;
-  material: string;
-  model: string;
+  color: CaseColor;
+  finish: CaseFinish;
+  material: CaseMaterial;
+  model: PhoneModel;
   configId: string;
 };
 
