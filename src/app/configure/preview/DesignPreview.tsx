@@ -4,7 +4,7 @@ import Phone from "@/components/Phone";
 import { Button } from "@/components/ui/button";
 import { BASE_PRICE, PRODUCT_PRICES } from "@/config/products";
 import { cn, FormatPrice } from "@/lib/utils";
-import { COLORS, FINISHES, MODELS } from "@/validators/options-validator";
+import { COLORS, MODELS } from "@/validators/options-validator";
 import { Configuration } from "@prisma/client";
 import { useMutation } from "@tanstack/react-query";
 import { ArrowRight, Check } from "lucide-react";
