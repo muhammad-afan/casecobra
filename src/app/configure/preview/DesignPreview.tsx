@@ -59,6 +59,7 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
   });
 
   const handleCheckout = () => {
+    console.log("reached inside handleCheckout ", user, isLoginModalOpen);
     if (user) {
       console.log("user in if", user);
       // create payment session
@@ -69,6 +70,7 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
       localStorage.setItem("configurationId", id);
       setIsLoginModalOpen(true);
     }
+    console.log("after handle checkout ", user, isLoginModalOpen);
   };
 
   return (
