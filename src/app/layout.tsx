@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Toaster } from "@/components/ui/toaster";
 import Providers from "@/components/Providers";
 import { constructMetadata } from "@/lib/utils";
+import ZenvyxWidget from "../components/ZenvyxWidget";
 
 const recursive = Recursive({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           </div>
           <Footer />
         </main>
+        <ZenvyxWidget />
         <Toaster />
       </body>
     </html>
