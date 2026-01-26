@@ -12,7 +12,7 @@ export default function ZenvyxWidget() {
     script.src = "https://wa-widget.zenvyx.tech/widget.js";
     script.async = true;
     script.crossOrigin = "anonymous";
-    script.setAttribute("data-settings-id", "696d62e291dee6df6ee529f0");
+    script.setAttribute("data-settings-id", "6977253c58cc288725a9df43");
 
     document.body.appendChild(script);
 
